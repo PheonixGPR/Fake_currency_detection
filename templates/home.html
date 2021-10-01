@@ -1,0 +1,45 @@
+<html>
+	<head>
+	<style>
+	body {
+	  background-image: url({{url_for('static',filename='bg.jpg')}});
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  background-size: 100% 100%;
+	}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	</head>
+	<body>
+		<center>
+			<form method="POST",action="{{url_for('home')}}" style = "padding-top: 150px;">
+				<div class="container-fluid" style="border:5px solid black; width:580px;
+						padding-bottom: 50px;
+						padding-top: 50px;
+						box-shadow: 10px 10px 20px black;
+						background-color: white" align=center >
+						
+				<table style=" border-collapse:separate; border-spacing:0 15px"  align="center">
+					<tr align='middle'>
+						<td colspan=2><b><h1>Investigate Note<h1></b></td>
+					</tr>
+					<tr align='middle'>
+						<td colspan=2><b>Input Currency Note Images</b></td>
+					</tr>
+					<tr>
+					<td align='left'><b>Normal Image :</b></td>
+					<td align='middle'><input type="file",id="myFile", name="a"></td>
+					</tr>
+					<tr>
+					<td align='left'><b>Image With Backlight:</b></td>
+					<td align='middle'><input type="file",id="myFile", name="b"></td>
+					</tr>
+					<tr align='middle'>
+						<td colspan=2><input type="Submit"></td>
+					</tr>
+				</div>
+			</form>
+		</center>
+	</body>
+</html>
